@@ -19,7 +19,6 @@ import TextButton from '../Button/TextButton/TextButton';
 import Divider from '../Divider/Divider';
 import Card from '../Card/Card';
 import FormInput from '../FormInput/FormInput';
-import ViewOnGithubButton from '../ViewOnGithubButton/ViewOnGithubButton';
 import GithubLoginButton from '../GithubLoginButton/GithubLoginButton';
 
 const SignUpCard = ({ signUpStart, error, fetching }) => {
@@ -156,7 +155,6 @@ const SignUpCard = ({ signUpStart, error, fetching }) => {
           </Link>
         </section>
       </Card>
-      <ViewOnGithubButton />
     </Fragment>
   );
 };
