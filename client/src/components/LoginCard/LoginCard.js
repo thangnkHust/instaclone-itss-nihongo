@@ -16,9 +16,9 @@ import Button from '../Button/Button';
 import FormInput from '../FormInput/FormInput';
 import Divider from '../Divider/Divider';
 import TextButton from '../Button/TextButton/TextButton';
-import ViewOnGithubButton from '../ViewOnGithubButton/ViewOnGithubButton';
 import GithubLoginButton from '../GithubLoginButton/GithubLoginButton';
 import Card from '../Card/Card';
+// import GoogleLoginButton from '../GoogleLoginButton/GoogleLoginButton';
 
 const LoginCard = ({
   signInStart,
@@ -49,7 +49,7 @@ const LoginCard = ({
       }
     >
       <Card className="form-card">
-        <h1 className="heading-logo text-center">Instaclone</h1>
+        <h1 className="heading-logo text-center">Instagram</h1>
         <form
           onSubmit={(event) => handleSubmit(event)}
           className="form-card__form"
@@ -72,6 +72,7 @@ const LoginCard = ({
         </form>
         <Divider>OR</Divider>
         <GithubLoginButton />
+        {/* <GoogleLoginButton /> */}
         {error && (
           <p style={{ padding: '1rem 0' }} className="error">
             {error}
@@ -100,7 +101,6 @@ const LoginCard = ({
           </Link>
         </section>
       </Card>
-      <ViewOnGithubButton />
     </div>
   );
 };

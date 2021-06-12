@@ -7,7 +7,7 @@ import { selectToken } from '../../redux/user/userSelectors';
 
 const ProtectedRoute = ({ token, children, ...props }) => {
   return (
-    <Route {...props}>{token ? children : <Redirect to="/login" />}</Route>
+    <Route {...props}>{token ? children : (props.pathname === '/' ? <Redirect to="/top-page" /> : <Redirect to="/login" />)}</Route>
   );
 };
 

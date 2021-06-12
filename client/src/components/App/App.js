@@ -12,7 +12,7 @@ import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import Header from '../Header/Header';
 import Modal from '../../components/Modal/Modal';
 import Alert from '../../components/Alert/Alert';
-import Footer from '../../components/Footer/Footer';
+// import Footer from '../../components/Footer/Footer';
 import MobileNav from '../../components/MobileNav/MobileNav';
 
 import LoadingPage from '../../pages/LoadingPage/LoadingPage';
@@ -35,6 +35,7 @@ const ExplorePage = lazy(() => import('../../pages/ExplorePage/ExplorePage'));
 const NotFoundPage = lazy(() =>
   import('../../pages/NotFoundPage/NotFoundPage')
 );
+const TopPage = lazy(() => import('../../pages/TopPage/TopPage'));
 
 export function UnconnectedApp({
   signInStart,
@@ -92,7 +93,7 @@ export function UnconnectedApp({
     }
     return (
       <Fragment>
-        {pathname !== '/login' && pathname !== '/signup' && <Header />}
+        {pathname !== '/login' && pathname !== '/signup' && pathname !== '/top-page' && <Header />}
         {renderModals()}
         {transitions.map(
           ({ item, props, key }) =>
@@ -103,19 +104,19 @@ export function UnconnectedApp({
             )
         )}
         <Switch>
+          <Route exact path="/top-page" component={TopPage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignUpPage} />
-          <ProtectedRoute exact path="/" component={HomePage} />
+          <ProtectedRoute exact path="/" component={HomePage} pathname={pathname} />
           <ProtectedRoute path="/settings" component={SettingsPage} />
           <ProtectedRoute path="/activity" component={ActivityPage} />
           <ProtectedRoute path="/new" component={NewPostPage} />
           <ProtectedRoute path="/explore" component={ExplorePage} />
-          <Route exact path="/:username" component={ProfilePage} />
-          <Route path="/post/:postId" component={PostPage} />
+          <ProtectedRoute exact path="/:username" component={ProfilePage} />
+          <ProtectedRoute path="/post/:postId" component={PostPage} />
           <ProtectedRoute path="/confirm/:token" component={ConfirmationPage} />
           <Route component={NotFoundPage} />
         </Switch>
-        {pathname !== '/' && <Footer />}
         {pathname !== '/login' &&
           pathname !== '/signup' &&
           pathname !== '/new' &&
