@@ -10,6 +10,7 @@ import { selectCurrentUser } from '../../redux/user/userSelectors';
 import useScrollPositionThrottled from '../../hooks/useScrollPositionThrottled';
 
 import { ReactComponent as LogoCamera } from '../../assets/svg/logo-camera.svg';
+import logo from '../../assets/svg/logo.png';
 import SearchBox from '../SearchBox/SearchBox';
 import NewPostButton from '../NewPost/NewPostButton/NewPostButton';
 import NotificationButton from '../Notification/NotificationButton/NotificationButton';
@@ -38,30 +39,24 @@ const Header = memo(({ currentUser }) => {
     <header className={headerClassNames}>
       <div className="header__content">
         <Link to="/" className="header__logo">
-          <div className="header__logo-image">
-            <LogoCamera />
-          </div>
           <div className="header__logo-header">
-            <h3 className="heading-logo">Instaclone</h3>
+            <h3 className="heading-logo">Instagram</h3>
           </div>
         </Link>
         <SearchBox />
         <div className="header__icons">
           {currentUser ? (
             <Fragment>
-              <Link to="/explore">
+              <Link to="/">
                 <Icon
-                  icon={pathname === '/explore' ? 'compass' : 'compass-outline'}
+                  icon={'home'}
                 />
               </Link>
-              <NotificationButton />
+              {/* <NotificationButton /> */}
+              <Icon icon={'heart-outline'}/>
               <Link to={'/' + currentUser.username}>
                 <Icon
-                  icon={
-                    pathname === '/' + currentUser.username
-                      ? 'person-circle'
-                      : 'person-circle-outline'
-                  }
+                  icon={'person-circle'}
                 />
               </Link>
               <NewPostButton />

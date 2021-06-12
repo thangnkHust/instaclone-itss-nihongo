@@ -18,7 +18,7 @@ import Divider from '../Divider/Divider';
 import TextButton from '../Button/TextButton/TextButton';
 import GithubLoginButton from '../GithubLoginButton/GithubLoginButton';
 import Card from '../Card/Card';
-import GoogleLoginButton from '../GoogleLoginButton/GoogleLoginButton';
+// import GoogleLoginButton from '../GoogleLoginButton/GoogleLoginButton';
 
 const LoginCard = ({
   signInStart,

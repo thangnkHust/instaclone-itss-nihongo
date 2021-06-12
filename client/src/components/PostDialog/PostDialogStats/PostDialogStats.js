@@ -93,27 +93,7 @@ const PostDialogStats = ({
             className="icon--button post-dialog__like"
           />
         )}
-        <Icon
-          onClick={() =>
-            currentUser && document.querySelector('.add-comment__input').focus()
-          }
-          className="icon--button"
-          icon="chatbubble-outline"
-        />
-        <Icon className="icon--button" icon="paper-plane-outline" />
-        <Icon
-          className="icon--button"
-          onClick={() => bookmarkPost(post._id, token)}
-          icon={
-            currentUser && currentUser.bookmarks
-              ? !!currentUser.bookmarks.find(
-                  (bookmark) => bookmark.post === post._id
-                )
-                ? 'bookmark'
-                : 'bookmark-outline'
-              : 'bookmark-outline'
-          }
-        />
+        <Icon className="icon--button"/>
       </div>
       <p className="heading-4">
         {post.postVotes.length === 0 ? (
