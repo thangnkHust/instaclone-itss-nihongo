@@ -13,8 +13,7 @@ const GithubLoginButton = ({ button, style }) => {
         process.env.NODE_ENV === 'development'
           ? 'bcefdabdfe3512135737'
           : 'bcefdabdfe3512135737'
-      }
-      &redirect_uri=${
+      }&redirect_uri=${
         window.location.origin
       }/login&state=${authState}&scope=user:email`}
       className={classNames({ 'github-login-button': true, button })}
