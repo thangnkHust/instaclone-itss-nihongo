@@ -16,6 +16,9 @@ import Alert from '../../components/Alert/Alert';
 import MobileNav from '../../components/MobileNav/MobileNav';
 
 import LoadingPage from '../../pages/LoadingPage/LoadingPage';
+
+import UserList from '../../pages/Admin/User/UserList';
+
 const ProfilePage = lazy(() => import('../../pages/ProfilePage/ProfilePage'));
 const PostPage = lazy(() => import('../../pages/PostPage/PostPage'));
 const ConfirmationPage = lazy(() =>
@@ -110,6 +113,7 @@ export function UnconnectedApp({
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignUpPage} />
           <Route exact path="/admin" component={Admin} />
+          <Route exact path="/admin/users" component={UserList} />
           <ProtectedRoute exact path="/" component={HomePage} pathname={pathname} />
           <ProtectedRoute path="/settings" component={SettingsPage} />
           <ProtectedRoute path="/activity" component={ActivityPage} />
