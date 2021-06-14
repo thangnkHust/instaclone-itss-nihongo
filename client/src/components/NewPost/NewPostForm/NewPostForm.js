@@ -62,11 +62,16 @@ const NewPostForm = ({
     <Fragment>
       {loading && <Loader />}
       <MobileHeader show>
-        <Icon
+        {/* <Icon
           icon="chevron-back"
           onClick={() => back()}
           style={{ cursor: 'pointer' }}
-        />
+        /> */}
+        <Icon
+          icon="close-outline"
+          onClick={() => hide()}
+          style={{ cursor: 'pointer' }}
+        />  
         <h3 className="heading-3">New Post</h3>
         <TextButton
           bold

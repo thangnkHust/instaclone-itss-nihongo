@@ -15,7 +15,7 @@ const NewPost = ({ file, hide }) => {
     filter: null,
     filterName: '',
   });
-  const [activeSection, setActiveSection] = useState('filter');
+  const [activeSection, setActiveSection] = useState('details');
   const [filters, setFilters] = useState([]);
 
   // Load a preview image of the image to post

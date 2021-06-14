@@ -30,6 +30,9 @@ const TopPage = ({token}) => {
                     <li className='nav__right'>
                         <Link to=''>About Us</Link>
                     </li>
+                    <li className='nav__right'>
+                        <Link to='/admin'>Admin</Link>
+                    </li>
                 </ul>
             </div>
             <div className='main-content'>

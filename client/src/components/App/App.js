@@ -16,6 +16,9 @@ import Alert from '../../components/Alert/Alert';
 import MobileNav from '../../components/MobileNav/MobileNav';
 
 import LoadingPage from '../../pages/LoadingPage/LoadingPage';
+
+import UserList from '../../pages/Admin/User/UserList';
+
 const ProfilePage = lazy(() => import('../../pages/ProfilePage/ProfilePage'));
 const PostPage = lazy(() => import('../../pages/PostPage/PostPage'));
 const ConfirmationPage = lazy(() =>
@@ -36,6 +39,8 @@ const NotFoundPage = lazy(() =>
   import('../../pages/NotFoundPage/NotFoundPage')
 );
 const TopPage = lazy(() => import('../../pages/TopPage/TopPage'));
+
+const Admin = lazy(() => import('../../pages/Admin/Admin'));
 
 export function UnconnectedApp({
   signInStart,
@@ -107,6 +112,8 @@ export function UnconnectedApp({
           <Route exact path="/top-page" component={TopPage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignUpPage} />
+          <Route exact path="/admin" component={Admin} />
+          <Route exact path="/admin/users" component={UserList} />
           <ProtectedRoute exact path="/" component={HomePage} pathname={pathname} />
           <ProtectedRoute path="/settings" component={SettingsPage} />
           <ProtectedRoute path="/activity" component={ActivityPage} />
@@ -115,6 +122,7 @@ export function UnconnectedApp({
           <ProtectedRoute exact path="/:username" component={ProfilePage} />
           <ProtectedRoute path="/post/:postId" component={PostPage} />
           <ProtectedRoute path="/confirm/:token" component={ConfirmationPage} />
+          
           <Route component={NotFoundPage} />
         </Switch>
         {pathname !== '/login' &&

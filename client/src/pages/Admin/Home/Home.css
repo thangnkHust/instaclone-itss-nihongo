@@ -1,0 +1,12 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}  
+.home{
+    flex: 4;
+}
+
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+}
