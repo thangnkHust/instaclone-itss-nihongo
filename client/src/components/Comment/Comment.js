@@ -193,7 +193,7 @@ const Comment = ({
           ) : null}
           <div className="comment__stats">
             <p className="heading-5 color-light">{commentPostTime}</p>
-            {!caption && (
+            {/* {!caption && (
               <Fragment>
                 {comment.commentVotes.length > 0 && (
                   <p className="heading-5 color-light">
@@ -217,7 +217,7 @@ const Comment = ({
                   reply
                 </button>
               </Fragment>
-            )}
+            )} */}
           </div>
           {caption && post.commentData ? (
             <Link
@@ -244,7 +244,7 @@ const Comment = ({
             </p>
           ) : null}
         </div>
-        {!caption && (
+        {/* {!caption && (
           <div className="comment__like">
             {currentUser ? (
               <PulsatingIcon
@@ -266,7 +266,7 @@ const Comment = ({
               <Icon icon="heart-outline" className="icon--tiny" />
             )}
           </div>
-        )}
+        )} */}
       </div>
       {/* Render any comment replies */}
       {toggleCommentReplies
