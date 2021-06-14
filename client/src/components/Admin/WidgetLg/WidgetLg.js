@@ -12,44 +12,44 @@ function WidgetLg() {
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
             <img
-              src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src="https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg"
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Susan Carol</span>
+            <span className="widgetLgName">thangnk</span>
           </td>
           <td className="widgetLgDate">12</td>
         </tr>
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
             <img
-              src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src="https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg"
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Susan Carol</span>
+            <span className="widgetLgName">thuc</span>
           </td>
           <td className="widgetLgDate">11</td>
         </tr>
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
             <img
-              src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src="https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg"
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Susan Carol</span>
+            <span className="widgetLgName">hungabc</span>
           </td>
           <td className="widgetLgDate">8</td>
         </tr>
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
             <img
-              src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src="https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg"
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Susan Carol</span>
+            <span className="widgetLgName">test</span>
           </td>
           <td className="widgetLgDate">8</td>
         </tr>

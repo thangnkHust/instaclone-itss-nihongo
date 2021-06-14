@@ -25,27 +25,27 @@ export const userData = [
   },
   {
     name: "Jul",
-    "Active User": 7,
+    "Active User": 0,
   },
   {
     name: "Agu",
-    "Active User": 10,
+    "Active User": 0,
   },
   {
     name: "Sep",
-    "Active User": 2,
+    "Active User": 0,
   },
   {
     name: "Oct",
-    "Active User": 9,
+    "Active User": 0,
   },
   {
     name: "Nov",
-    "Active User": 5,
+    "Active User": 0,
   },
   {
     name: "Dec",
-    "Active User": 3,
+    "Active User": 0,
   },
 ];
 
@@ -77,27 +77,27 @@ export const postData = [
   },
   {
     name: "Jul",
-    "Active Post": 154,
+    "Active Post": 0,
   },
   {
     name: "Agu",
-    "Active Post": 58,
+    "Active Post": 0,
   },
   {
     name: "Sep",
-    "Active Post": 50,
+    "Active Post": 0,
   },
   {
     name: "Oct",
-    "Active Post": 168,
+    "Active Post": 0,
   },
   {
     name: "Nov",
-    "Active Post": 184,
+    "Active Post": 0,
   },
   {
     name: "Dec",
-    "Active Post": 174,
+    "Active Post": 0,
   },
 ];
 export const productData = [
@@ -118,93 +118,93 @@ export const productData = [
 export const userRows = [
   {
     id: 1,
-    username: "Jon Snow",
+    username: "thangnk",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "jon@gmail.com",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
+    email: "thangnk.hust@gmail.com",
     status: "active",
     post: "20",
   },
   {
     id: 2,
-    username: "Jon Snow",
+    username: "thuc",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "jon@gmail.com",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
+    email: "ttthuc28@gmail.com",
     status: "active",
-    post: "20",
+    post: "18",
   },
   {
     id: 3,
-    username: "Jon Snow",
+    username: "hungabc",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "jon@gmail.com",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
+    email: "truonghungvatvo@gmail.com",
     status: "active",
-    post: "20",
+    post: "17",
   },
   {
     id: 4,
-    username: "Jon Snow",
+    username: "thuc1",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "jon@gmail.com",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
+    email: "user1@gmail.com",
     status: "active",
-    post: "20",
+    post: "16",
   },
   {
     id: 5,
-    username: "Jon Snow",
+    username: "hung",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "jon@gmail.com",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
+    email: "hungabc@gmail.com",
     status: "active",
-    post: "20",
+    post: "15",
   },
   {
     id: 6,
-    username: "Jon Snow",
+    username: "testtest",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "jon@gmail.com",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
+    email: "testtest@gmail.com",
     status: "active",
-    post: "20",
+    post: "14",
   },
   {
     id: 7,
-    username: "Jon Snow",
+    username: "test",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    email: "jon@gmail.com",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
+    email: "test@gmail.com",
     status: "active",
-    post: "20",
+    post: "13",
   },
   {
     id: 8,
     username: "Jon Snow",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
     email: "jon@gmail.com",
     status: "active",
-    post: "20",
+    post: "12",
   },
   {
     id: 9,
     username: "Jon Snow",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
     email: "jon@gmail.com",
     status: "active",
-    post: "20",
+    post: "11",
   },
   {
     id: 10,
     username: "Jon Snow",
     avatar:
-      "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://banner2.cleanpng.com/20180402/ojw/kisspng-united-states-avatar-organization-information-user-avatar-5ac20804a62b58.8673620215226654766806.jpg",
     email: "jon@gmail.com",
     status: "active",
-    post: "20",
+    post: "10",
   },
 ];
 
