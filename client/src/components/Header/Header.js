@@ -23,6 +23,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import { signOut } from '../../redux/user/userActions';
 
 const StyledMenu = withStyles({
   paper: {
@@ -55,7 +56,7 @@ const StyledMenuItem = withStyles((theme) => ({
   },
 }))(MenuItem);
 
-const Header = memo(({ currentUser }) => {
+const Header = memo(({ currentUser, signOut }) => {
   const [shouldMinimizeHeader, setShouldMinimizeHeader] = useState(false);
   const {
     location: { pathname },
@@ -83,6 +84,10 @@ const Header = memo(({ currentUser }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const handleLogout = () => {
+    signOut();
+  }
 
   return (
     <header className={headerClassNames}>
@@ -140,10 +145,18 @@ const Header = memo(({ currentUser }) => {
                       <ListItemText primary="Setting" />
                     </StyledMenuItem>
                   </Link>
-                  <Link to={'/top-page'} style={{ textDecoration: 'none' }}>
+                  <Link to={'/admin'} style={{ textDecoration: 'none' }}>
                     <StyledMenuItem onClick={handleClose}>
                       <ListItemIcon>
-                        <Icon icon={'person-circle'}/>
+                        <Icon icon={'logo-angular'}/>
+                      </ListItemIcon>
+                      <ListItemText primary="Admin" />
+                    </StyledMenuItem>
+                  </Link>
+                  <Link to={'/top-page'} style={{ textDecoration: 'none', color: 'gray' }}>
+                    <StyledMenuItem onClick={handleLogout}>
+                      <ListItemIcon>
+                        <Icon icon={'log-out'}/>
                       </ListItemIcon>
                       <ListItemText primary="Logout" />
                     </StyledMenuItem>
@@ -175,5 +188,8 @@ Header.whyDidYouRender = true;
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
 });
+const mapDispatchToProps = (dispatch) => ({
+  signOut: () => dispatch(signOut()),
+});
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
