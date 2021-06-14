@@ -21,7 +21,7 @@ const Topbar = () => {
                     <div className="topbarIconContainer">
                         <Settings />
                     </div>
-                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-anh-avatar-de-thuong.jpg" alt="" className="topAvatar" />
+                    <img src="https://res.cloudinary.com/instaclone-image/image/upload/v1623238022/dmqq0ry93e5cabyxtudh.jpg" alt="" className="topAvatar" />
                 </div>
             </div>
         </div>
